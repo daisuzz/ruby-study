@@ -11,15 +11,15 @@ module Mail
   end
 
   def to_s
-    <<-EOS
-Postcard of #{@date}:
-
-Dear #{@recipient},
-
-#{@text}
-
-Sincerely,
-#{@sender}
+    <<~EOS
+      Postcard of #{@date}:
+      
+      Dear #{@recipient},
+      
+      #{@text}
+      
+      Sincerely,
+      #{@sender}
     EOS
   end
 end
